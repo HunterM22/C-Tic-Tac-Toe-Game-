@@ -71,6 +71,7 @@
             this.p2NameTextBox.Name = "p2NameTextBox";
             this.p2NameTextBox.Size = new System.Drawing.Size(203, 26);
             this.p2NameTextBox.TabIndex = 3;
+            this.p2NameTextBox.TextChanged += new System.EventHandler(this.p2NameTextBox_TextChanged);
             this.p2NameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.p2NameTextBox_KeyPress);
             // 
             // UserInputSubmitButton

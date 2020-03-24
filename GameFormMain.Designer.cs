@@ -344,7 +344,7 @@
             this.MinimumSize = new System.Drawing.Size(250, 331);
             this.Name = "TicTacToeGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tic Tac Toe Game";
+            this.Text = "Tic Tac Toe";
             this.Load += new System.EventHandler(this.TicTacToeGame_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

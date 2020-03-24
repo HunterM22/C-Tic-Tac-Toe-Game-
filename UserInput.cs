@@ -33,5 +33,10 @@ namespace TicTacToeGame
             if (e.KeyChar.ToString() == "\r")
                 UserInputSubmitButton.PerformClick();
         }
+
+        private void p2NameTextBox_TextChanged(object sender, EventArgs e)
+        {                   
+
+        }
     }
 }

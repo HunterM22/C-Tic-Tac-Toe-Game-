@@ -16,6 +16,7 @@ namespace TicTacToeGame
         int turnCount = 0;
         static string player1;
         static string player2;
+        bool againstComputer = false;
 
         public TicTacToeGame()
         {
