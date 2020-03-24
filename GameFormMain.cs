@@ -14,14 +14,27 @@ namespace TicTacToeGame
     {
         bool turn = true; //true=X turn, false =O turn
         int turnCount = 0;
+        static string player1;
+        static string player2;
 
         public TicTacToeGame()
         {
             InitializeComponent();
         }
 
+        public static void SetPlayerNames(string n1, string n2)
+        {
+            player1 = n1;
+            player2 = n2;
+        }
+
         private void TicTacToeGame_Load(object sender, EventArgs e)
         {
+            Form f2 = new UserInput();
+            f2.ShowDialog();
+            XWinCount.Text = player1;
+            OWinCount.Text = player2;
+
 
         }
 
@@ -85,12 +98,12 @@ namespace TicTacToeGame
                 string winner = "";
                 if (turn)
                 {
-                    winner = "O";
+                    winner = player2;
                     o_win_count.Text = (Int32.Parse(o_win_count.Text) + 1).ToString();
                 }
                 else
                 {
-                    winner = "X";
+                    winner = player1;
                     x_win_count.Text = (Int32.Parse(x_win_count.Text) + 1).ToString();
                 }
                 MessageBox.Show(winner + " Wins!", "Congrats!");
@@ -171,6 +184,11 @@ namespace TicTacToeGame
             o_win_count.Text = "0";
             x_win_count.Text = "0";
             draw_count.Text = "0";
+
+        }
+
+        private void XWinCount_Click(object sender, EventArgs e)
+        {
 
         }
     }
